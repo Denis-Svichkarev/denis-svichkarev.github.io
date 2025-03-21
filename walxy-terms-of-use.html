@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walxy - Terms of Use</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, rgba(0, 140, 240, 0.05) 0%, rgba(255, 255, 255, 0.9) 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(to right, #0080ff, #00b0ff);
+            color: white;
+            padding: 40px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            text-align: center;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #0080ff;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #0080ff;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #0080ff;
+            margin: 1.5rem 0 0.75rem;
+        }
+
+        h4 {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 1.25rem 0 0.5rem;
+        }
+
+        .content {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            margin: 40px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .updated-date {
+            display: inline-block;
+            background: rgba(0, 128, 255, 0.1);
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: rgba(0, 128, 255, 0.05);
+            border-left: 4px solid #0080ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .warning-box {
+            background: rgba(255, 99, 71, 0.05);
+            border-left: 4px solid tomato;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+
+        .nav-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: white;
+            color: #0080ff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        footer {
+            background: #002855;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .footer-links {
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #00b0ff;
+        }
+
+        .footer-logo {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .section-indicator {
+            display: inline-block;
+            font-size: 0.85rem;
+            background: rgba(0, 128, 255, 0.1);
+            color: #0080ff;
+            padding: 2px 10px;
+            border-radius: 12px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        #toc {
+            background: rgba(0, 128, 255, 0.05);
+            padding: 20px 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        #toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #toc ul li {
+            margin-bottom: 10px;
+        }
+
+        #toc a {
+            color: #0080ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #toc a:hover {
+            color: #005bb5;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 25px;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Terms of Use</h1>
+            <p>Walxy - Get Out & Explore Cities</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="nav-buttons">
+            <a href="walxy-marketing.html" class="nav-button">Home</a>
+            <a href="walxy-privacy-policy.html" class="nav-button">Privacy Policy</a>
+            <a href="mailto:walxy.app@gmail.com" class="nav-button">Contact Us</a>
+        </div>
+
+        <div class="content">
+            <p class="updated-date">Last updated: March 20, 2025</p>
+
+            <p>Welcome to Walxy! These Terms of Use constitute a legally binding agreement made between you ("you" or "user") and Denis Svichkarev ("me", "I", or "my"), concerning your access to and use of the Walxy mobile application ("the App").</p>
+
+            <p>Please read these Terms of Use carefully before you start using Walxy. By downloading, installing, or using the App, you confirm that you accept these Terms of Use and agree to abide by them. If you do not agree with any part of these terms, you must not use the App.</p>
+
+            <div class="highlight-box">
+                <strong>Key Points:</strong>
+                <ul>
+                    <li>Walxy is intended for users 18 years of age or older</li>
+                    <li>You are responsible for your own safety while using the App</li>
+                    <li>Data is stored locally on your device</li>
+                    <li>The App includes features that require in-app purchases</li>
+                    <li>These Terms are governed by Italian law</li>
+                </ul>
+            </div>
+
+            <div id="toc">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#modifications">Modifications to Terms</a></li>
+                    <li><a href="#age-requirements">Age Requirements</a></li>
+                    <li><a href="#safety-disclaimer">Safety Disclaimer</a></li>
+                    <li><a href="#location-health">Location and Health Data</a></li>
+                    <li><a href="#fitness-disclaimer">Health and Fitness Disclaimer</a></li>
+                    <li><a href="#intellectual-property">Intellectual Property</a></li>
+                    <li><a href="#premium">Premium Features and Subscriptions</a></li>
+                    <li><a href="#battery">Battery Usage and Device Performance</a></li>
+                    <li><a href="#accuracy">Accuracy of Information</a></li>
+                    <li><a href="#termination">Term and Termination</a></li>
+                    <li><a href="#limitations">Limitations of Liability</a></li>
+                    <li><a href="#governing-law">Governing Law</a></li>
+                </ul>
+            </div>
+
+            <h2 id="modifications">Modifications to Terms</h2>
+            <p>I expressly reserve the right to change these Terms of Use from time to time without notice to you. You acknowledge and agree that it is your responsibility to review these Terms periodically and to be aware of any modifications. Your continued use of the App after such modifications will constitute acknowledgment of the modified Terms and agreement to abide and be bound by the modified Terms.</p>
+
+            <h2 id="age-requirements">Age Requirements</h2>
+            <p>Walxy is intended for users 18 years of age or older. By using the App, you confirm that you are at least 18 years old. If you are a parent or guardian allowing a minor to use the App, you are fully responsible for their usage and ensuring their safety while using the App.</p>
+
+            <h2 id="safety-disclaimer">Safety Disclaimer</h2>
+            <div class="warning-box">
+                <p><strong>Important safety information:</strong> Walxy encourages exploration and outdoor activity, but you are solely responsible for your personal safety. The App may suggest or track walks in areas that could be dangerous in certain circumstances.</p>
+            </div>
+
+            <p>By using Walxy, you acknowledge and agree that:</p>
+            <ul>
+                <li>You are responsible for choosing where to walk and explore</li>
+                <li>You will follow all local laws and regulations regarding access to areas</li>
+                <li>You will avoid dangerous locations such as industrial zones, construction sites, military facilities, airports, private property, or natural hazards like rivers and steep terrain</li>
+                <li>You will use common sense and prioritize your safety over earning points or completing sectors</li>
+                <li>You will not trespass on private property or restricted areas</li>
+                <li>You will be aware of traffic and follow appropriate pedestrian safety measures</li>
+            </ul>
+
+            <p>I expressly disclaim all liability for any safety incidents, accidents, injuries, property damage, or legal issues that may arise during your use of the App or while following routes or exploring areas displayed in the App.</p>
+
+            <h2 id="location-health">Location and Health Data</h2>
+            <p>To provide its core functionality, Walxy requires access to your location data and may request access to health-related data such as step count. By using the App, you consent to:</p>
+
+            <ul>
+                <li>The collection and local storage of your location data during walks</li>
+                <li>The processing of this data to show you explored sectors and walking statistics</li>
+                <li>The use of motion data to track your activity level and provide fitness-related insights</li>
+            </ul>
+
+            <p>All data is stored locally on your device. You may revoke these permissions at any time through your device settings, though this will limit App functionality.</p>
+
+            <h2 id="fitness-disclaimer">Health and Fitness Disclaimer</h2>
+            <p>Walxy provides fitness tracking features, including calorie burn estimates, walking speed recommendations, and activity monitoring. These features are for informational and recreational purposes only and not intended as medical advice.</p>
+            
+            <p>By using Walxy, you acknowledge that:</p>
+            <ul>
+                <li>The fitness and health information provided is approximate and may not be accurate for your specific body or health condition</li>
+                <li>You should consult with healthcare professionals before starting any new exercise program</li>
+                <li>The App is not a medical device and cannot diagnose, treat, or prevent any medical condition</li>
+                <li>You assume all risk associated with your physical activity while using the App</li>
+            </ul>
+
+            <p>I expressly disclaim any warranty regarding the accuracy of fitness metrics, calorie calculations, or other health-related information provided by the App.</p>
+
+            <h2 id="intellectual-property">Intellectual Property</h2>
+            <p>The App, including all content, features, and functionality, is owned by Denis Svichkarev and is protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.</p>
+            
+            <p>By accepting these Terms of Use, you acknowledge and agree that all content presented to you on the App is protected by copyrights, trademarks, service marks, patents, or other proprietary rights and laws and is my sole property.</p>
+
+            <p>You are granted a limited, non-exclusive, non-transferable, revocable license to use the App solely for your personal, non-commercial purposes. You may not:</p>
+            <ul>
+                <li>Modify, copy, distribute, transmit, display, perform, reproduce, publish, license, create derivative works from, transfer, or sell any information, software, products, or services obtained from the App</li>
+                <li>Decompile, reverse engineer, disassemble, or otherwise attempt to derive the source code or underlying ideas or algorithms of the App</li>
+                <li>Remove any copyright, trademark, or other proprietary rights notices contained in or on the App</li>
+                <li>Use the App for any commercial purpose or for the benefit of any third party</li>
+            </ul>
+
+            <h2 id="premium">Premium Features and Subscriptions</h2>
+            <p>Walxy offers premium features through in-app purchases and subscriptions. By purchasing a premium subscription, you acknowledge and agree that:</p>
+            <ul>
+                <li>All transactions are final and non-refundable except as required by applicable law</li>
+                <li>Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period</li>
+                <li>Subscription management and cancellation must be done through your App Store account settings</li>
+                <li>Pricing and features may change, with notice provided before changes take effect</li>
+                <li>Family Sharing enabled subscriptions may be shared among family members as defined and limited by the App Store's Family Sharing policies</li>
+            </ul>
+
+            <p>Premium features include but are not limited to:</p>
+            <ul>
+                <li>Unlimited walk duration (free version limits walks to 1 hour)</li>
+                <li>Unlimited walks per day (free version limits to 2 walks per day)</li>
+                <li>Unlimited cities and countries (free version allows only 2 cities)</li>
+                <li>Unlimited walk history (free version shows only the last 10 walks)</li>
+                <li>Ad-free experience</li>
+            </ul>
+
+            <h2 id="battery">Battery Usage and Device Performance</h2>
+            <p>Walxy uses GPS tracking and other device features that may cause increased battery consumption. I am not responsible for any battery drain, device performance issues, or data usage charges that may result from using the App. You acknowledge that:</p>
+            <ul>
+                <li>Continuous GPS usage will increase battery consumption</li>
+                <li>Background location tracking may impact device performance and battery life</li>
+                <li>The App's performance may vary based on your device model, operating system version, and available resources</li>
+            </ul>
+
+            <h2 id="accuracy">Accuracy of Information</h2>
+            <p>While I strive for accuracy in all aspects of the App, I make no warranties regarding the precision of GPS tracking, sector boundaries, distance calculations, calorie estimates, or other metrics. Maps and location data may contain errors or inaccuracies. You acknowledge that:</p>
+            <ul>
+                <li>GPS accuracy can be affected by buildings, weather, and other factors</li>
+                <li>Sector boundaries and street names are approximate</li>
+                <li>Fitness calculations are estimates and may not be accurate for your specific body type or conditions</li>
+            </ul>
+
+            <h2 id="termination">Term and Termination</h2>
+            <p>These Terms of Use will become effective when you download, install, or use the App and will remain effective until terminated by you or by me.</p>
+            
+            <p>I reserve the right to terminate these Terms of Use or suspend your access to the App at any time in case of unauthorized or suspected unauthorized use of the App whether in contravention of these Terms of Use or otherwise. If I terminate these Terms of Use or suspend your access for any of the reasons set out in this section, I shall have no liability or responsibility to you.</p>
+            
+            <p>You may terminate these Terms of Use by deleting the App from your device. Upon termination, your right to use the App will immediately cease.</p>
+
+            <h2 id="limitations">Disclaimer of Warranties and Limitations of Liability</h2>
+            <div class="warning-box">
+                <p>The App is provided on an "AS IS" and "AS AVAILABLE" basis without any representation or warranty, whether express, implied, or statutory.</p>
+            </div>
+            
+            <p>To the maximum extent permitted by applicable law, I specifically disclaim any implied warranties of title, merchantability, fitness for a particular purpose, and non-infringement. I do not warrant that the functions contained in the App will be uninterrupted or error-free, that defects will be corrected, or that the App or the servers that make it available are free of viruses or other harmful components.</p>
+            
+            <p>Under no circumstances will I be liable for any loss or damage caused by your reliance on information obtained through the App or for any harm resulting from your use of the App.</p>
+            
+            <p>In no event shall I be liable for any indirect, incidental, special, punitive, or consequential damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:</p>
+            <ul>
+                <li>Your access to or use of or inability to access or use the App</li>
+                <li>Any conduct or content of any third party on the App</li>
+                <li>Any content obtained from the App</li>
+                <li>Unauthorized access, use, or alteration of your transmissions or content</li>
+                <li>Any injuries, accidents, or other incidents that occur during your use of the App</li>
+            </ul>
+            
+            <p>You agree to defend, indemnify, and hold me harmless from and against any claims, liabilities, damages, losses, and expenses, including, without limitation, reasonable legal and accounting fees, arising out of or in any way connected with your access to or use of the App or your violation of these Terms of Use.</p>
+
+            <h2 id="governing-law">Governing Law</h2>
+            <p>These Terms of Use and any dispute or claim arising out of or in connection with them or their subject matter or formation (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of Italy.</p>
+            
+            <p>Any legal suit, action, or proceeding arising out of or related to these Terms of Use or the App shall be instituted exclusively in the courts of Italy, and you irrevocably submit to the personal jurisdiction of such courts in any such suit, action, or proceeding.</p>
+            
+            <h2 id="contact">Contact Information</h2>
+            <p>If you have any questions about these Terms of Use, please contact me:</p>
+            <ul>
+                <li>By email: <a href="mailto:walxy.app@gmail.com">walxy.app@gmail.com</a></li>
+            </ul>
+            
+            <p>By using Walxy, you acknowledge that you have read and understood these Terms of Use and agree to be bound by them.</p>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="walxy-marketing.html" class="nav-button">Return to Home</a>
+            <a href="walxy-privacy-policy.html" class="nav-button">View Privacy Policy</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <img src="walxy/app-icon.png" alt="Walxy Logo" class="footer-logo">
+            <div class="footer-links">
+                <a href="walxy-marketing.html">Home</a>
+                <a href="walxy-privacy-policy.html">Privacy Policy</a>
+                <a href="walxy-terms-of-use.html">Terms of Use</a>
+                <a href="mailto:walxy.app@gmail.com">Contact Us</a>
+            </div>
+            <p>&copy; 2025 Denis Svichkarev. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
