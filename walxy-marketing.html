@@ -262,6 +262,19 @@
             margin: 40px 0;
         }
 
+        .highlight-box {
+            background: rgba(0, 128, 255, 0.05);
+            border-left: 4px solid #0080ff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .watch-integration {
+            background: linear-gradient(135deg, rgba(255, 69, 0, 0.05), rgba(255, 140, 0, 0.05));
+            border-left: 4px solid #ff4500;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 2.2rem;
@@ -293,6 +306,7 @@
             <p style="text-align: center; max-width: 800px; margin: 0 auto 30px;">
                 Walxy turns ordinary walks into exciting explorations by dividing cities into discoverable sectors. 
                 As you walk, you'll uncover new areas and increase your mastery level of familiar ones, creating your own personalized city map.
+                With Apple Watch integration and iCloud sync, your walking data stays with you everywhere.
             </p>
 
  <!--            <div class="screenshots-row">
@@ -308,7 +322,7 @@
                     <img src="walxy/icon-map.svg" alt="Map Icon">
                 </div>
                 <h3>Sector Exploration</h3>
-                <p>Divide cities into discoverable sectors. Revisit areas to increase your mastery level.</p>
+                <p>Divide cities into discoverable sectors. Revisit areas to increase your mastery level through 6 different levels from Visitor to Master.</p>
             </div>
 
             <div class="feature-item">
@@ -325,6 +339,30 @@
                 </div>
                 <h3>Optimal Fat Burning</h3>
                 <p>Get real-time guidance on your walking pace to stay in the optimal fat burning zone for maximum health benefits.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="walxy/icon-watch.svg" alt="Apple Watch Icon">
+                </div>
+                <h3>Apple Watch Integration</h3>
+                <p>Monitor your heart rate in real-time, control your walks from your wrist, and get enhanced fitness tracking with Apple Watch support.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="walxy/icon-cloud.svg" alt="iCloud Icon">
+                </div>
+                <h3>iCloud Backup & Sync</h3>
+                <p>Automatically backup your data to iCloud and sync across all your devices. Never lose your walking progress again.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">
+                    <img src="walxy/icon-health.svg" alt="HealthKit Icon">
+                </div>
+                <h3>HealthKit Integration</h3>
+                <p>Seamlessly integrates with Apple Health for step counting, heart rate data, and comprehensive fitness tracking.</p>
             </div>
 
             <div class="feature-item">
@@ -373,23 +411,32 @@
                 </div>
                 
                 <div class="stat-item">
-                    <div class="stat-number">10</div>
+                    <div class="stat-number">5</div>
                     <div class="stat-label">Points per sector</div>
+                </div>
+
+                <div class="stat-item">
+                    <div class="stat-number">♥</div>
+                    <div class="stat-label">Heart Rate Zones</div>
                 </div>
             </div>
             
             <p style="margin-top: 30px;">
                 Each city is divided into sectors that you can discover during your walks. Revisit sectors to increase your mastery level from Visitor to Master. 
                 The more you explore, the more your personal city map fills in, creating a visual record of your walking journey. 
-                Earn points based on distance walked, time spent, and new sectors discovered.
+                Earn points based on distance walked, time spent, and new sectors discovered. With Apple Watch, monitor your heart rate to stay in optimal fat burning zones.
             </p>
+
+            <div class="highlight-box">
+                <p><strong>Internet Connection Required:</strong> Walxy needs an internet connection to identify street names and sector information using Apple's location services. Basic GPS tracking works offline, but sector names and map details require connectivity.</p>
+            </div>
         </div>
 
         <div class="call-to-action">
             <div class="cta-content">
                 <h2 style="color: white;">Ready to Explore Your City?</h2>
                 <p style="margin-bottom: 30px; font-size: 1.2rem;">
-                    Transform your daily walks into journeys of discovery with Walxy.
+                    Transform your daily walks into journeys of discovery with Walxy's advanced features.
                 </p>
                 <a href="https://apps.apple.com/us/app/walxy/id1234567890" class="btn">Download Now</a>
                 <a href="#premium" class="btn btn-secondary">Learn About Premium</a>
@@ -415,22 +462,50 @@
 
                 <div class="feature-item">
                     <h3>Multiple Cities</h3>
-                    <p>Free version allows only 2 cities. Premium lets you explore unlimited cities and countries.</p>
+                    <p>Free version allows only 2 cities. Premium lets you explore unlimited cities and countries worldwide.</p>
                 </div>
 
                 <div class="feature-item">
                     <h3>Complete Walk History</h3>
-                    <p>Free version shows only the last 10 walks. Premium gives you access to your full walking history.</p>
+                    <p>Free version shows only the last 10 walks. Premium gives you access to your full walking history with unlimited storage.</p>
                 </div>
 
                 <div class="feature-item">
                     <h3>Ad-Free Experience</h3>
-                    <p>Enjoy Walxy without any advertisements or interruptions.</p>
+                    <p>Enjoy Walxy without any advertisements or interruptions during your walking sessions.</p>
                 </div>
 
                 <div class="feature-item">
                     <h3>Support Development</h3>
-                    <p>Your subscription helps support the continued development and improvement of Walxy.</p>
+                    <p>Your subscription helps support the continued development and improvement of Walxy with new features.</p>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <p><strong>Age Requirement:</strong> Walxy is intended for users 18 years of age or older. The app's activity tracking and health recommendations are designed for adult users.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Privacy & Data Security</h2>
+            <p style="text-align: center; margin-bottom: 30px;">
+                Your privacy is our top priority. Here's how we protect your data:
+            </p>
+
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>No Personal Data Sharing</h3>
+                    <p>We never upload your routes, location history, or personal information to external servers.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Optional iCloud Backup</h3>
+                    <p>You choose whether to enable iCloud backup. When enabled, data is encrypted and stored in your personal iCloud account.</p>
+                </div>
+
+                <div class="feature-item">
+                    <h3>Health Data Privacy</h3>
+                    <p>HealthKit and Apple Watch data is processed locally on your device and never transmitted to third parties.</p>
                 </div>
             </div>
         </div>

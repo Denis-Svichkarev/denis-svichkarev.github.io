@@ -94,6 +94,14 @@
             border-radius: 0 8px 8px 0;
         }
 
+        .warning-box {
+            background: rgba(255, 140, 0, 0.05);
+            border-left: 4px solid #ff8c00;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
         .nav-buttons {
             display: flex;
             justify-content: center;
@@ -232,6 +240,9 @@
                     <li><a href="#information-collection">Information Collection and Use</a></li>
                     <li><a href="#location-data">Location Data</a></li>
                     <li><a href="#health-fitness">Health and Fitness Data</a></li>
+                    <li><a href="#apple-watch">Apple Watch Integration</a></li>
+                    <li><a href="#healthkit">HealthKit Integration</a></li>
+                    <li><a href="#icloud">iCloud Backup and Sync</a></li>
                     <li><a href="#data-storage">Data Storage and Usage</a></li>
                     <li><a href="#safety">Safety and Responsibility</a></li>
                     <li><a href="#advertising">Advertising and Analytics</a></li>
@@ -264,6 +275,7 @@
                 <li>Tracking your walks and routes</li>
                 <li>Identifying sectors you have explored</li>
                 <li>Calculating walking statistics</li>
+                <li>Providing street names and sector information (requires internet connection)</li>
             </ul>
 
             <div class="highlight-box">
@@ -282,6 +294,7 @@
                 <li>Step count</li>
                 <li>Walking cadence</li>
                 <li>Elevation changes</li>
+                <li>Activity type detection (to distinguish walking from driving/cycling)</li>
             </ul>
 
             <p>This data is used to calculate fitness metrics like calories burned and to determine your walking intensity. All health and fitness data is:</p>
@@ -293,12 +306,97 @@
 
             <p>You can control access to health and fitness data through your device settings at any time.</p>
 
+            <h2 id="apple-watch">Apple Watch Integration</h2>
+            <p>When you connect an Apple Watch to enhance your Walxy experience, the following data may be collected and processed:</p>
+
+            <h3>Apple Watch Data Collection</h3>
+            <ul>
+                <li><strong>Heart Rate Data:</strong> Real-time heart rate measurements for fat burning zone calculations</li>
+                <li><strong>Activity Data:</strong> Workout information and activity metrics</li>
+                <li><strong>Device Status:</strong> Watch connectivity and battery status for optimal performance</li>
+                <li><strong>Sensor Data:</strong> Motion sensors for enhanced step counting and activity detection</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>Apple Watch Privacy:</strong> All heart rate and watch data is processed locally on your devices (iPhone and Apple Watch) and is never transmitted to external servers or shared with third parties.</p>
+            </div>
+
+            <h3>Battery Usage Notice</h3>
+            <p>Apple Watch integration may significantly increase battery consumption on both your iPhone and Apple Watch (up to double normal usage). This is due to:</p>
+            <ul>
+                <li>Continuous heart rate monitoring</li>
+                <li>Real-time data synchronization between devices</li>
+                <li>Enhanced GPS accuracy when both devices are active</li>
+            </ul>
+
+            <h2 id="healthkit">HealthKit Integration</h2>
+            <p>Walxy integrates with Apple's HealthKit framework to provide enhanced fitness tracking capabilities:</p>
+
+            <h3>HealthKit Data Access</h3>
+            <p>With your permission, Walxy may access the following data from HealthKit:</p>
+            <ul>
+                <li><strong>Step Count:</strong> Daily and historical step data from your iPhone's Health app</li>
+                <li><strong>Heart Rate:</strong> Heart rate data when Apple Watch is connected</li>
+                <li><strong>Active Energy:</strong> Calories burned during activities</li>
+                <li><strong>Walking Distance:</strong> Distance data for improved accuracy</li>
+                <li><strong>Workout Data:</strong> Walking and fitness session information</li>
+            </ul>
+
+            <h3>HealthKit Data Usage</h3>
+            <p>HealthKit data is used to:</p>
+            <ul>
+                <li>Provide more accurate step counting and distance calculations</li>
+                <li>Enhance calorie burn estimations based on your personal health profile</li>
+                <li>Detect and prevent incorrect activity types (such as driving or cycling)</li>
+                <li>Optimize fat burning zone recommendations</li>
+            </ul>
+
+            <div class="warning-box">
+                <p><strong>Health Data Privacy:</strong> All HealthKit data remains on your device and is processed locally. Walxy never uploads health data to external servers. You can revoke HealthKit permissions at any time through your device's Health app settings.</p>
+            </div>
+
+            <h2 id="icloud">iCloud Backup and Sync</h2>
+            <p>Walxy offers optional iCloud integration for data backup and synchronization across your devices:</p>
+
+            <h3>iCloud Features</h3>
+            <p>When you choose to enable iCloud backup, the following features are available:</p>
+            <ul>
+                <li><strong>Automatic Backup:</strong> Scheduled backups of your walking data to your personal iCloud account</li>
+                <li><strong>Manual Backup:</strong> On-demand backup creation and restoration</li>
+                <li><strong>Cross-Device Sync:</strong> Synchronization of walking data between your iPhone, iPad, and Apple Watch</li>
+                <li><strong>Data Recovery:</strong> Ability to restore your data when switching devices or reinstalling the app</li>
+            </ul>
+
+            <h3>What's Backed Up to iCloud</h3>
+            <p>When iCloud backup is enabled, the following data is stored in your personal iCloud account:</p>
+            <ul>
+                <li>Your walking history and route data</li>
+                <li>City exploration progress and sector mastery levels</li>
+                <li>Achievement and statistics data</li>
+                <li>App preferences and settings</li>
+                <li>Photos taken during walks (in encrypted format)</li>
+            </ul>
+
+            <div class="highlight-box">
+                <p><strong>iCloud Privacy:</strong> Data backed up to iCloud is stored in your personal iCloud account and is subject to Apple's iCloud privacy policies. I do not have access to your iCloud data. You control when backups are created and can disable iCloud features at any time.</p>
+            </div>
+
+            <h3>iCloud Requirements</h3>
+            <p>To use iCloud features:</p>
+            <ul>
+                <li>iCloud Drive must be enabled in your device settings</li>
+                <li>You must be signed in to your Apple ID</li>
+                <li>Sufficient iCloud storage space must be available</li>
+                <li>Walxy must be enabled in your iCloud Drive app list</li>
+            </ul>
+
             <h2 id="data-storage">Data Storage and Usage</h2>
             <p>It is important to understand that:</p>
             <ul>
                 <li>Your personal data, location history, walking routes, explored sectors, and fitness statistics are <strong>stored locally on your device only</strong></li>
-                <li>This data is not uploaded to external servers</li>
-                <li>When you delete the Walxy app, all your data is removed along with it</li>
+                <li>This data is not uploaded to external servers (except when you choose to use iCloud backup)</li>
+                <li>When you delete the Walxy app, all your local data is removed along with it</li>
+                <li>iCloud backup data remains in your personal iCloud account until you delete it</li>
             </ul>
 
             <h3>Diagnostic and Usage Data</h3>
@@ -307,9 +405,10 @@
                 <li>App performance metrics (crashes, hang-ups)</li>
                 <li>Feature usage statistics (anonymized and aggregated)</li>
                 <li>Device information (model, OS version)</li>
+                <li>Anonymous technical analytics through Apple's frameworks</li>
             </ul>
 
-            <p>For this purpose, I utilize Google Analytics, which may collect certain technical data from your device. No personally identifiable information or location data is obtained through this process.</p>
+            <p>For this purpose, I utilize Apple's analytics frameworks, which may collect certain technical data from your device. No personally identifiable information, location data, or health data is obtained through this process.</p>
 
             <h2 id="safety">Safety and Responsibility Disclaimer</h2>
             <p>Walxy encourages exploration and outdoor activity, but users are solely responsible for their personal safety. The App does not guarantee that all areas shown as explorable are safe or legally accessible. Users must:</p>
@@ -317,6 +416,7 @@
                 <li>Follow local laws regarding access to areas</li>
                 <li>Avoid dangerous locations such as industrial zones, construction sites, private property, or natural hazards</li>
                 <li>Exercise common sense and prioritize personal safety over earning points or completing sectors</li>
+                <li>Be aware that sector boundaries and accessibility information may not be complete or current</li>
             </ul>
 
             <p>As the App developer, I do not assume responsibility for your choice of walking routes or any accidents, injuries, or legal issues that may arise while using the App. Always use good judgment and be aware of your surroundings.</p>
@@ -361,7 +461,9 @@
             </ul>
 
             <h2 id="children">Children's Privacy</h2>
-            <p>Walxy is intended for users 18 years of age or older. I do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your child has provided personal data, please contact me so that I can take appropriate steps.</p>
+            <p>Walxy is intended for users 18 years of age or older. I do not knowingly collect personally identifiable information from anyone under the age of 18. The app's activity tracking features and health recommendations are designed specifically for adult users.</p>
+
+            <p>If you are a parent or guardian and you are aware that your child has provided personal data, please contact me so that I can take appropriate steps. Parents who allow minors to use the app are fully responsible for ensuring their safety during walking activities.</p>
 
             <h2 id="transfer">Transfer of Data</h2>
             <p>If you are located outside Italy and choose to provide information to me, please note that I transfer minimal technical data to Italy and process it there for diagnostic purposes only.</p>
@@ -374,9 +476,9 @@
             <ul>
                 <li><strong>Right to Access:</strong> Since all personal data is stored locally on your device, you already have direct access to all your information through the App itself.</li>
                 
-                <li><strong>Right to Data Portability:</strong> All your data is on your device and not stored on external servers. You control the data on your device directly.</li>
+                <li><strong>Right to Data Portability:</strong> All your data is on your device and not stored on external servers. You control the data on your device directly. iCloud backup data can be exported through the app's backup features.</li>
                 
-                <li><strong>Right to Deletion/Erasure:</strong> Uninstalling the App permanently removes all of your personal data, effectively fulfilling this right. No additional steps are needed to delete your data from external servers because your data is never stored there.</li>
+                <li><strong>Right to Deletion/Erasure:</strong> Uninstalling the App permanently removes all of your personal data from your device, effectively fulfilling this right. For iCloud data, you can delete backups through the app settings or your iCloud account.</li>
                 
                 <li><strong>Right to Restriction of Processing:</strong> You can control data collection by adjusting permissions in your device settings at any time.</li>
             </ul>
